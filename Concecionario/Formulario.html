@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de Autos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFFFFF;
+            color: #000000;
+        }
+        h1 {
+            color: #008000;
+        }
+        form {
+            background-color: #FFFFFF;
+            padding: 20px;
+            border: 1px solid #008000;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 128, 0, 0.5);
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 5px;
+            margin: 5px 0;
+            border: 1px solid #008000;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #008000;
+            color: #FFFFFF;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #006400;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario de Autos</h1>
+    <form action="procesar_formulario.php" method="post">
+        <label for="placa">Placa:</label>
+        <input type="text" name="placa" maxlength="6" required><br>
+        <label for="marca">Marca:</label>
+        <input type="text" name="marca" maxlength="15" required><br>
+        <label for="modelo">Modelo:</label>
+        <input type="number" name="modelo" required><br>
+        <label for="color">Color:</label>
+        <input type="text" name="color" maxlength="10" required><br>
+        <input type="submit" value="Guardar">
+    </form>
+</body>
+</html>
